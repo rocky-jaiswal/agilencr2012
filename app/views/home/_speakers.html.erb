@@ -1,0 +1,30 @@
+<div class="speakers_call">
+  <ul>
+	<li>
+	  <%= render "speakers/"+@my_hash[1] %>
+	</li>
+	<li>
+	  <%= render "speakers/"+@my_hash[2] %>
+	</li>
+	<li>
+	  <%= render "speakers/"+@my_hash[3] %>
+	</li>
+	<li>
+	  <%= render "speakers/"+@my_hash[4] %>
+	</li>
+	<li>
+	  <%= render "speakers/"+@my_hash[5] %>
+	</li>
+	<li>
+	  <%= render "speakers/"+@my_hash[6] %>
+	</li>
+	<li>
+	  <%= render "speakers/"+@my_hash[7] %>
+	</li>
+  </ul>
+</div>
+<script language="javascript">
+  $(document).ready(function() {
+		$('.speakers_call').vTicker();
+  });
+</script>

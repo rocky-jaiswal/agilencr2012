@@ -1,0 +1,32 @@
+<%= link_to "", root_path, :class => "logo" %>
+
+<div id="main-menu">
+  <% if current_page?(:controller => 'home', :action => 'index') %>
+	 <span id="first-child" class="current">HOME</span>
+  <% else %>
+	 <%= link_to "HOME", root_path %>
+  <% end %>
+
+  <% if current_page?(:controller => 'pages', :action => 'about') %>
+	 <span class="current">ABOUT</span>
+  <% else %>
+	 <%= link_to "ABOUT", :controller => "pages", :action => "about" %>
+  <% end %>
+
+  <% if current_page?(:controller => 'pages', :action => 'venue') %>
+	 <span class="current">VENUE</span>
+  <% else %>
+	 <%= link_to "VENUE", :controller => "pages", :action => "venue" %>
+  <% end %>
+	
+  <% if current_page?(:controller => 'pages', :action => 'agenda') %>
+	 <span class="current">AGENDA</span>
+  <% else %>
+	 <%= link_to "AGENDA", :controller => "pages", :action => "agenda" %>
+  <% end %>
+
+  <a href="https://docs.google.com/a/qatherapist.com/spreadsheet/viewform?formkey=dEpUbl93R0pwTlpNaGhyUS02RkJkX0E6MQ" target="_blank">CALL FOR PAPERS</a>
+
+  <a href="https://docs.google.com/open?id=0B_gdUjze6gYYVXVQbWxCTDh3UTA" target="_blank">SPONSORSHIP</a>
+</div>
+
