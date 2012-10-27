@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body {
-	background:url("../images/top_bg-new2.jpg") repeat-x scroll 0 0 #fff;
+	background:url("/assets/top_bg-new2.jpg") repeat-x scroll 0 0 #fff;
 	color:#404040;
 	font-family: Arial, Helvetica,sans-serif;
 	font-size:12px;
@@ -42,7 +42,7 @@ ol, ul {
 	padding-top:5px;
 }
 .logo {
-	background:url(../images/logo.png) no-repeat;
+	background:url("/assets/logo.png") no-repeat;
 	width:205px;
 	height:49px;
 	display:inline-block;
@@ -82,7 +82,7 @@ a.logo:hover {
 	border:0 none !important;
 }
 .signup_btn {
-	background:url("../images/subscribe_btn.gif") no-repeat scroll 0 0 transparent;
+	background:url("/assets/subscribe_btn.gif") no-repeat scroll 0 0 transparent;
 	border:0 solid #FFFFFF;
 	height:20px;
 	position:absolute;
@@ -153,7 +153,7 @@ a.signup_btn:hover {
 }
 .about_area {
 	float:left;
-	background:url(../images/grey_border.gif);
+	background:url("/assets/grey_border.gif");
 	background-position:top right;
 	background-repeat:no-repeat;
 	width:583px;
@@ -172,7 +172,7 @@ a.signup_btn:hover {
 .innercontent_area h2 {
 	font-size:18px;
 	color: #ff9c00;
-	background:url(../images/blue_bars.gif);
+	background:url("/assets/blue_bars.gif");
 	background-position:center bottom;
 	background-repeat:repeat-x;
 	padding-bottom:10px;
@@ -234,7 +234,7 @@ a.signup_btn:hover {
 	-moz-background-clip:border;
 	-moz-background-inline-policy:continuous;
 	-moz-background-origin:padding;
-/*	background:transparent url(../images/register_now_hp.png) no-repeat scroll 0 0;*/
+/*	background:transparent url(/assets/register_now_hp.png) no-repeat scroll 0 0;*/
 	border-bottom:1px dotted #6B81B3;
 	height:106px;
 	margin-top:5px;
@@ -244,20 +244,20 @@ a.signup_btn:hover {
 	-moz-background-clip:border;
 	-moz-background-inline-policy:continuous;
 	-moz-background-origin:padding;
-/*	background:transparent url(../images/agenda.png) no-repeat scroll 0 0;*/
+/*	background:transparent url(/assets/agenda.png) no-repeat scroll 0 0;*/
 	border-bottom:1px dotted #6B81B3;
 	height:106px;
 	margin-top:5px;
 	width:392px;
 }
 .submit_papers_box {
-	background:url(../images/submit_papers_box.png) no-repeat;
+	background:url("/assets/submit_papers_box.png") no-repeat;
 	width:392px;
 	margin-top:20px;
 	height: 102px;
 }
 .signup_box {
-	background:url(../images/submit_papers_box.png) no-repeat;
+	background:url("/assets/submit_papers_box.png") no-repeat;
 	width:392px;
 	margin-top:20px;
 	height: 259px;
@@ -296,7 +296,7 @@ a.signup_btn:hover {
 .speakers_box_inner h1 {
 	font-size:18px;
 	color: #ff9c00;
-	background:url(../images/blue_bars.gif);
+	background:url("/assets/blue_bars.gif");
 	background-position:center bottom;
 	background-repeat:repeat-x;
 	padding-bottom:10px;
@@ -305,7 +305,7 @@ a.signup_btn:hover {
 .speaker_pic_inner {
 	float:left;
 	width:178px;
-	background:url(../images/pic_divider.gif);
+	background:url("/assets/pic_divider.gif");
 	background-position:top right;
 	background-repeat:no-repeat;
 }
@@ -333,7 +333,7 @@ a.signup_btn:hover {
 	margin-top:30px;
 	font-size:18px;
 	color: #ff9c00;
-	background:url(../images/blue_bars.gif);
+	background:url("/assets/blue_bars.gif");
 	background-position:center bottom;
 	background-repeat:repeat-x;
 	padding-bottom:10px;
@@ -358,7 +358,7 @@ a.signup_btn:hover {
 .speaker_pic {
 	float:left;
 	width:110px;
-	background:url(../images/pic_divider.gif);
+	background:url("/assets/pic_divider.gif");
 	background-position:top right;
 	background-repeat:no-repeat;
 	margin: 2px;
@@ -389,7 +389,7 @@ a.signup_btn:hover {
 .news_section h2 {
 	font-size:18px;
 	color: #ff9c00;
-	background:url(../images/blue_bars.gif);
+	background:url("/assets/blue_bars.gif");
 	background-position:center bottom;
 	background-repeat:repeat-x;
 	padding-bottom:10px;
@@ -399,7 +399,7 @@ a.signup_btn:hover {
 	-moz-background-clip:border;
 	-moz-background-inline-policy:continuous;
 	-moz-background-origin:padding;
-	background:transparent url(../images/news_box.gif) no-repeat scroll left top;
+	background:transparent url("/assets/news_box.gif") no-repeat scroll left top;
 	margin-bottom:30px;
 	margin-top:10px;
 	padding-bottom:20px;
@@ -420,7 +420,7 @@ a.signup_btn:hover {
 .sponsers_area h2 {
 	font-size:18px;
 	color: #ff9c00;
-	background:url(../images/blue_bars.gif);
+	background:url("/assets/blue_bars.gif");
 	background-position:center bottom;
 	background-repeat:repeat-x;
 	padding-bottom:10px;
@@ -439,7 +439,7 @@ a.signup_btn:hover {
 	margin-right:0 !important;
 }
 .footer {
-	background:url(../images/footer_bg.gif);
+	background:url("/assets/footer_bg.gif");
 	background-repeat:repeat-x;
 	overflow:hidden;
 	margin-top:30px;
@@ -513,7 +513,7 @@ a.signup_btn:hover {
 	text-decoration:none;
 }
 div.vcard_area p.data {
-	background:url("../images/vcard_icon.gif") no-repeat scroll left center transparent;
+	background:url("/assets/vcard_icon.gif") no-repeat scroll left center transparent;
 	color:#2e2e2e;
 	font-size:12px;
 	font-weight:normal;
@@ -526,7 +526,7 @@ div.vcard_area p.data {
 	right:0px;
 	bottom:55px;
 	float:right;
-	background:url("../images/socialmedia_bg.png") no-repeat scroll left center transparent;
+	background:url("/assets/socialmedia_bg.png") no-repeat scroll left center transparent;
 	width:381px;
 	height:45px;
 }
@@ -551,7 +551,7 @@ div.vcard_area p.data {
 	color:#ff9c00;
 }
 .btn_submit {
-	background: url("../images/btn_bg.gif") repeat-x scroll 0 50% #F9F9F9;
+	background: url("/assets/btn_bg.gif") repeat-x scroll 0 50% #F9F9F9;
 	-moz-box-shadow: 3px 3px 3px #d6d6d6;
 	-webkit-box-shadow: 3px 3px 3px #d6d6d6;
 	box-shadow: 3px 3px 3px #d6d6d6;
@@ -678,7 +678,7 @@ div.field input.text:hover, div.field textarea:hover, form.standard input.text:h
 .error {
 	color: #D8000C;
 	background-color: #FFBABA;
-	/*	background-image: url('../images/red_cross.png');*/
+	/*	background-image: url('/assets/red_cross.png');*/
 }
 
 /* simple css-based tooltip */
@@ -700,7 +700,7 @@ div.field input.text:hover, div.field textarea:hover, form.standard input.text:h
 
 a.bigButton {
     /* Sliding right image */
-    background: transparent url('../images/button_right_01.png') no-repeat scroll top right;
+    background: transparent url('/assets/button_right_01.png') no-repeat scroll top right;
 	display: block;
 	float: left;
 	height: 36px; /* CHANGE THIS VALUE ACCORDING TO IMAGE HEIGHT */
@@ -715,7 +715,7 @@ a.bigButton {
 }
 a.bigButton span {
 	/* Background left image */
-	background: transparent url('../images/button_left_01.png') no-repeat;
+	background: transparent url('/assets/button_left_01.png') no-repeat;
 	display: block;
 	line-height: 26px; /* CHANGE THIS VALUE ACCORDING TO BUTTON HEIGHT */
 	padding: 5px 0 5px 18px;
