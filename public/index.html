@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Xebia presents Agile NCR 2013 :: 1st & 2nd February 2013, New Delhi, India</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="all"/>
+        <script type="text/javascript">
+            this.tooltip = function(){
+                /* CONFIG */
+                xOffset = 10;
+                yOffset = 20;
+                // these 2 variable determine popup's distance from the cursor
+                // you might want to adjust to get the right result
+                /* END CONFIG */
+                $(".reviewersPage img").hover(function(e){
+                    this.t = this.title;
+                    this.title = "";
+                    $("body").append("<p id='tooltip'>"+ this.t +"</p>");
+                    $("#tooltip")
+                    .css("top",(e.pageY - xOffset) + "px")
+                    .css("left",(e.pageX + yOffset) + "px")
+                    .fadeIn("fast");
+                },
+                function(){
+                    this.title = this.t;
+                    $("#tooltip").remove();
+                });
+                $(".reviewersPage img").mousemove(function(e){
+                    $("#tooltip")
+                    .css("top",(e.pageY - xOffset) + "px")
+                    .css("left",(e.pageX + yOffset) + "px");
+                });
+            };
+
+            $(document).ready(function(){
+                //                $('.agileCloud').fadeIn(3000, function(){
+                //                    $('.agileCloud').fadeOut(3000, function(){
+                //                        $('.welcomeScreen').fadeIn(1000);
+                //                    });
+                //               });
+                $('.rightHalf .conf').click(function(){
+                    $('.leftHalf>div').hide();
+                    $('.leftHalf .conferences').fadeIn();
+                });
+                $('.rightHalf .location').click(function(){
+                    $('.leftHalf>div').hide();
+                    $('.leftHalf .venue').fadeIn();
+                });
+                $('.rightHalf .home').click(function(){
+                    $('.leftHalf>div').hide();
+                    $('.leftHalf .welcomeScreen').fadeIn();
+                });
+                $('.rightHalf .about').click(function(){
+                    $('.leftHalf>div').hide();
+                    $('.leftHalf .aboutPage').fadeIn();
+                });
+                $('.rightHalf .contact').click(function(){
+                    $('.leftHalf>div').hide();
+                    $('.leftHalf .contactPage').fadeIn();
+                });
+                $('.rightHalf .speakers').click(function(){
+                    $('.leftHalf>div').hide();
+                    $('.leftHalf .speakersPage').fadeIn();
+                });
+                $('.rightHalf .register').click(function(){
+                    $('.leftHalf>div').hide();
+                    $('.leftHalf .registerPage').fadeIn();
+                });
+                $('.rightHalf .reviewers').click(function(){
+                    $('.leftHalf>div').hide();
+                    $('.leftHalf .reviewersPage').fadeIn();
+                });
+                $('.speakersPage .nav a').click(function(){
+                    var id = this.id;
+                    $('.speakersPage .details div').hide();
+                    $('.speakersPage .details #'+id+'-details').fadeIn();
+                    $('.speakersPage .nav a').removeClass('active');
+                    $('.speakersPage .nav a#'+id).addClass('active');
+                    
+                });
+                // starting the script on page load
+                tooltip();
+
+            });
+
+
+
+        </script>    
+    </head>
+    <body>
+        <div class="container">
+            <div class="leftHalf">
+                <div class="agileCloud" style="display: none;"></div>
+                <div class="welcomeScreen" style=""></div>
+                <div class="conferences" style="display: none;">
+                    <div class="box"> 
+                        <h1>Pragmatic Agile Adoption</h1>
+                        <h2>The reality of Agile</h2>
+                        This conference would focus on Agile Practices adoption and adaption with a focus on pragmatic agile adoption. This will focus on experience sharing sessions, case studies and white papers on team agility, Scrum, Enterprise Agile adoption, Agile Planning and Estimation, Agile Requirements Management and other related areas.
+                    </div>
+                    <div class="box"> 
+                        <h1>Executive conclave</h1>
+                        <h2>Agile Business Paradigm </h2>
+                        This business leader’s conclave will have theme of making agility work for business and how business leaders can help and take lead in adopting agility in their respective business environments. This would be featuring. Sessions on Agile Contracts, Building an Agile organization, role of Executive and Middle management in Agile Adoption, Measuring and forecasting business results etc.
+                    </div>
+                    <div class="box"> 
+                        <h1>Tech Huddle</h1>
+                        <h2>Agility for Geeks</h2>
+                        This conference is for all the techie geeks out there who want to learn all the latest trends and tools support agile deliveries including topics like Agile Testing, Continuous Integration, TDD, ATDD, BDD et al.
+                    </div>
+                    <div class="box"> 
+                        <h1>New Age HR</h1>
+                        <h2>Energizing HR for Agile Excellence</h2>
+                        Finally we are having a conference in India which will focus only on the HR aspect of Agility and the challenges they face. 
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="speakersPage" style="display:none;">
+                    <div class="nav">
+                        <a id="anil">Anil Bakshi</a>
+                        <a id="renna">Rena Striegel</a>
+                        <a id="madhur">Madhur Kathuria</a>
+                        <a id="jonas">Jonas Auken</a>
+                        <a id="jainendra">Jainendra Kumar</a>
+                        <a id="seema" class="active">Seema Verma</a>
+                        <a id="archana">Archana Joshi</a>
+                        <a id="indraneel">Indraneel Chakrabarty</a>
+                        <a id="puneet">Puneet Sachdev</a>
+                        <a id="niket">Niket Karajagi</a>
+                    </div>
+                    <div class="details">
+                        <div id="anil-details">
+                            <img src="images/speakers/anil.jpg">
+                            <h1>Anil Bakshi</h1>
+                            <span>As a Chief Executive Officer of Xebia India, Anil is responsible for the overall operations and strategy in the region. With over 20 years of experience across diverse geographies, Anil has a proven and successful track record of leading various International organizations including MRO Software, IBM Corporation, CollabNet & QXSys. His expertise spans across – implementation & management of corporate strategies, building and maintaining talents across geographies, profitable turnaround of operations and management of global alliances.</span>
+                        </div>
+                        <div id="renna-details" style="display: none; ">
+                            <img src="images/speakers/renne.jpg">
+                            <h1>Rena Striegel</h1>
+                            <span>Rena is the Director of Franchising and Training for BNI India. She is responsible for training business owners how to maximize their referral business through word of mouth marketing. Rena is a best selling author of the book “Building the Ultimate Network.” She is a regular speaker at various meetings and conferences on topics related to challenges that business owner’s face. She is also an adjunct professor at several universities in the United States. </span>
+                        </div>
+                        <div id="madhur-details" style="display: none; ">
+                            <img src="images/speakers/madhur.jpg">
+                            <h1>Madhur Kathuria</h1>
+                            <span>Madhur is an Agile Coach, Scrum Trainer, Speaker and a Leadership Coach specializing in applying Lean-Agile-Scrum methods. As India’s First and only Certified Scrum Coach (CSC), He has led the adoption and implementation of agile and scrum methodology at many organizations, leading successful agile projects with teams in the US, Europe, and India in the process coaching and training 6000+ professionals in Agile software development</span>
+                        </div>
+                        <div id="jonas-details" style="display: none; ">
+                            <img src="images/speakers/jonas.jpg">
+                            <h1>Johnas Auken</h1>
+                            <span>Jonas is a Dane living in Delhi. Every day he enjoys working in the tough space between processes, projects and cultures - always trying to mingle the three. He has 10 years of experience in agile, the last 2 of them here in India. Jonas employs Scrum, Kanban, eXtreme Programming or whatever it takes to bring quality to the customer and joy to the team. </span>
+                        </div>
+                        <div id="jainendra-details" style="display: none; ">
+                            <img src="images/speakers/jainendra.jpg">
+                            <h1>Jainendra Kumar</h1>
+                            <span>Jainendra is Director - Product Development at Pitney Bowes Software, is a business and technology visionary, brings ideas and concepts to realization through cutting edge technology solutions in-line with corporate strategy. He is an agile practitioner, coach, thought leader, speaker and write blogs. Jai has obtained his B. Tech. degree in Engineering from University of Agril. & Tech. Pantnagar. Jai received his MBA from IMT, Ghaziabad and did Sr. Management Program from IIM, Calcutta</span>
+                        </div>
+                        <div id="seema-details"  style="display: none; ">
+                            <img src="images/speakers/seema.jpg">
+                            <h1>Seema Verma</h1>
+                            <span>Seema is working as Global Training Head at Infogain with prior experience of managing trainings at TechMahinda and Infosys. As training head she is taking care of learning and development requirements across various verticals (Retail, Insurance, Hi-Tech, International) and technology horizontals for different locations along with batches for Campus Graduates. Responsible for building competencies based on gaps identified in behavioral, technical and domain capabilities.</span>
+                        </div>
+                        <div id="archana-details" style="display: none; ">
+                            <img src="images/speakers/archana.jpg">
+                            <h1>Archana Verma</h1>
+                            <span>Seema is working as Global Training Head at Infogain with prior experience of managing trainings at TechMahinda and Infosys. As training head she is taking care of learning and development requirements across various verticals (Retail, Insurance, Hi-Tech, International) and technology horizontals for different locations along with batches for Campus Graduates. Responsible for building competencies based on gaps identified in behavioral, technical and domain capabilities.</span>
+                        </div>
+                        <div id="indraneel-details" style="display: none; ">
+                            <img src="images/speakers/indraneel.jpg">
+                            <h1>Indraneel Chakrabarty</h1>
+                            <span>Indraneel is an experienced Staffing & Business Leader with 15+ years of proven track record of success within a variety of Industries including High-Tech, Online, Banking, Insurance, Start-ups, Biotech, Telecom, E-Commerce and Social Media. Professional, High Integrity, Leader, Resourceful, Understanding of International Dynamics, Relational, Tech Savvy, Multi-lingual (5 Languages). Worked in USA, Traveled to Singapore for Technical Recruitment & Finland for Employer Branding</span>
+                        </div>
+
+
+                        <div id="puneet-details" style="display: none; ">
+                            <img src="images/speakers/puneet.jpg">
+                            <h1>Puneet Sachdev</h1>
+                            <span>Puneet is a TOGAF Certified Lead Architect with 16 years of experience in delivering IT solutions from concept to production. Currently he is heading NIIT Technologies Open Source, Content Management and Agile Centers of Excellence.Technical. Is an evangelist and mentor with strong belief in Open Source and Agile practices. Has worked as consulting architect with Sabre Holdings, Travelocity, American Express (Travel), Virgin America and Yatra Online within the Travel industry.</span>
+                        </div>
+                        <div id="niket-details" style="display: none; ">
+                            <img src="images/speakers/niket.jpg">
+                            <h1>Niket Karajagi</h1>
+                            <span>Niket Karajagi is a Business Psychologist based out of Pune, India & Singapore jointly. He has been a Senior Corporate Professional for over a decade in the areas of Customer Support, Sales & Marketing, Product Management, CAD/CAM Consulting and Franchise Management. Niket founded Atyaasaa Consulting Private Limited which specializes in all aspects of people development and organization development. Niket is consulting with top notch Corporate Brands in India and overseas and manages large people projects through his handpicked passionate team of professionals at Atyaasaa.</span>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="reviewersPage" style="display: none;">
+                    <img src="images/reviewrs/Abhay-Aggarwal.jpg" title="Abhay Aggarwal"/>
+                    <img src="images/reviewrs/Animesh-Prakash.jpg" title="Animesh Prakash"/>
+                    <img src="images/reviewrs/Anita-Dhir.jpg" title="Anita Dhir"/>
+                    <img src="images/reviewrs/Bhavana-Verma.jpg" title="Bhavana Verma"/>
+                    <img src="images/reviewrs/Madhur-Kathuria.jpg" title="Madhur Kathuria"/>
+                    <img src="images/reviewrs/Raja-Bavani.jpg" title="Raja Bavani"/>
+                    <img src="images/reviewrs/Rocky-Jaiswal.jpg" title="Rocky Jaiswal"/>
+                    <img src="images/reviewrs/Sharad-Julka.jpg" title="Sharad Julka"/>
+                    <img src="images/reviewrs/Sunil-inteti.jpg" title="Sunil Inteti"/>
+                    <img src="images/reviewrs/Vibhu-Srinivasan.jpg" title="Vibhu Srinivasan"/>
+                    <img src="images/reviewrs/rathinakumar-balasubramanian.jpg" title="Rathinakumar Balasubramanian"/>
+                    <img src="images/reviewrs/Vikas-Gupta.jpg" title="Vikas Gupta"/>
+                </div>
+                <div class="venue" style="display: none;">
+                    <iframe width="723" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=RADISSON+BLU+DWARKA,+Raddison+Blu+Hotel+New+Delhi+Dwarka+,+Plot+No.4.,+Sector+13,+New+Delhi,+Delhi,+India&amp;aq=0&amp;oq=radis&amp;sll=36.985003,-119.311523&amp;sspn=12.906055,23.269043&amp;ie=UTF8&amp;hq=RADISSON+BLU+DWARKA,+Raddison+Blu+Hotel+New+Delhi+Dwarka+,+Plot+No.4.,&amp;hnear=Sector+13,+Rohini,+New+Delhi,+Delhi,+India&amp;t=m&amp;ll=28.59658,77.036133&amp;spn=0.241153,0.495758&amp;z=11&amp;iwloc=A&amp;output=embed"></iframe>
+                    <h1>Address</h1>
+                    <p>
+                        Radisson Blu Hotel,
+                        Plot No. 4,
+                        Sector 13 - Next to Metro Station,<br/> Dwarka City Centre, Near IGI Airport - 110075<br/>
+                        New Delhi - India <br/>
+                    </p>
+                </div>
+                <div class="aboutPage" style="display:none;">
+                    <h1>About AgileNCR</h1>
+                    <br>
+                    AgileNCR was founded by Xebia in the year 2007 when Agile software development was in nascent stages in India. We started this initiative with a clear intention of sharing knowledge and practices with the whole community. Since then years have passed and AgileNCR has become the most popular and the biggest Agile event in India.
+                    <br><br>
+                    Last edition - AgileNCR 2010 saw an overwhelming response from the community, we saw over 300+ participants from the 50+ organizations all across the India.
+                    <br><br>
+                    International speakers, industry practitioners, agile gurus have been associated with AgileNCR time and again - Pete Deemer, Sanjiv Augustine, Serge Beaumont, Hedwig Baars and Rini van Soligen to name a few.
+                    <br><br><br><br>
+                    <b>2007:</b> Small on-campus event completely sponsored and organized by Xebia.
+                    <br><br>
+                    <b>2008:</b> Mega event sponsored by GoodAgile, ASCI, SabreHoldings, Xebia Organized by Xebia at AIT Institute, Gurgaon.
+                    <br><br>
+                    <b>2009:</b> Ericson and Xebia came together to sponsor the event organized at The Park Premier Hotel, with a turnout of audience from 32 companies.
+                    <br><br>
+                    <b>2010:</b> Agile NCR 2010 witnessed great enthusiasm with the theme - "Been there, done that!"
+
+                </div>
+                <div class="contactPage" style="display: none;">
+                    <h1  style="margin-top:0">Sponsorship Queries</h1> <a href="mailto:sponsors2013@agilencr.org">sponsors2013@agilencr.org</a>
+                    <h1>Delegate Registration Queries</h1> <a href="mailto:registrations2013@agilencr.org">registrations2013@agilencr.org</a>
+                    <h1>Speaker Queries</h1> <a href="mailto:submissions2013@agilencr.org">submissions2013@agilencr.org</a>
+                    <h1>For everything else</h1> <a href="mailto:logistics2013@agilencr.org">logistics2013@agilencr.org</a>
+                    <h1>Contact Details</h1> 
+                    <div class="contactDetails">
+                        <span>Madhur Kathuria</span><br/> 
+                        <a href="mailto:mkathuria@xebia.com">mkathuria@xebia.com</a><br/>
+                        +91 9373312198<br/><br/>
+                        <span>Anurag Dutt</span><br/> 
+                        <a href="mailto:adutt@xebia.com">adutt@xebia.com</a><br/>
+                        +91 9910484190<br/><br/>
+                    </div>
+                </div>
+                <div class="registerPage" style="display: none;">
+                    <iframe style="height: 393px;width: 661px;border:0px;"  src="http://www.meraevents.com/pricingtab.php?EventId=18654&Twidzet=Yes&AX=Yes"> </iframe>
+                </div>
+            </div>
+            <div class="rightHalf">
+                <a class="icon home">Home</a>
+                <a class="icon about">About</a>
+                <a class="icon conf">Conferences</a>
+                <a class="icon speakers">Speakers</a>
+                <a class="icon reviewers">Reviewers</a>
+                <a class="icon location">Venue</a>
+                <a class="icon sponsors" href="https://docs.google.com/file/d/0B1moK3QU0ZOiQTdwd1lDZnNmNm8/edit?pli=1" target="_blank">Sponsors</a>
+                <a class="icon register">Register</a>
+                <a class="icon contact">Contact</a>
+                <div class="social_media">
+                    <ul>
+                        <li><a target="_blank" href="http://twitter.com/agilencr"><img longdesc="#" src="images/twitter.png"></a></li>
+                        <li><a target="_blank" href="http://www.youtube.com/XebiaIndia"><img longdesc="#" src="images/youtube.png"></a></li>
+                        <!--li><a target="_blank" href="http://www.slideshare.net/agilencr"><img longdesc="#" src="images/share_icon.gif"></a></li-->
+                        <li><a target="_blank" href="http://www.flickr.com/photos/xebiaindia"><img longdesc="#" src="images/flickr.png"></a></li>
+                        <li><a target="_blank" href="http://www.facebook.com/pages/Agile-NCR/300162546767882?fref=ts"><img longdesc="#" src="images/facebook.png"></a></li>
+                    </ul>
+                </div>                      
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    </body>
+
+</html>

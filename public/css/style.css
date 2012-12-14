@@ -1,0 +1,170 @@
+/* 
+    Document   : style
+    Created on : Dec 5, 2012, 3:21:46 PM
+    Author     : Kumar Abhinav
+    Email      : kabhinav@xebia.com
+    Description: CSS for Agile/NCR meet        
+*/
+
+body{background-image: url("../images/grid.png");background-color: #367899;margin: 0; padding: 0; font-family: 'Open Sans'; color: #444; font-size: 13px; line-height: 18px;}
+.container{position:absolute;top: 50%;left: 50%;width: 930px; height: 500px;background-color: #fff;margin: -250px 0 0 -465px ;}
+.leftHalf{float: left;width: 723px; position: relative;overflow: hidden;height: 100%}
+.rightHalf{float: right;background-color: #d75033;color: #fff;height: 492px; width: 207px; padding-top: 8px;position: relative;}
+.rightHalf a{color: #fff; text-decoration: none; font-size: 15px; line-height: 33px;}
+.clear{clear:both;}
+.icon{    background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 36px;
+    padding-left: 32px;margin-left: 15px;cursor: pointer;}
+a{text-decoration: none;}
+.home{background-position: 0 5px;}
+.speakers{background-position: 0 -30px;}
+.location{background-position: 0 -68px;}
+.conf{background-position: 0 -102px;}
+.sponsors{background-position: 0 -137px;}
+.about{background-position: -2px -169px;}
+.contact{background-position: -2px -198px;}
+.register{background-position: -2px -230px;}
+.reviewers{background-position: -2px -265px;}
+.agileCloud{ background-image: url("../images/agile-cloud.jpg");
+    height: 344px;
+    left: 33px;
+    position: absolute;
+    top: 74px;
+    width: 649px;
+    z-index: 1;
+}
+.welcomeScreen{  background-image: url("../images/welcome.png");
+    height: 339px;
+    left: 90px;
+    position: absolute;
+    top: 82px;
+    width: 546px;
+    z-index: 2;
+}
+.conferences{
+    position: absolute;
+}
+.venue{
+    position: absolute;
+}
+.conferences .box{
+    color: #444444;
+    float: left;
+    height: 205px;
+    margin: 29px;
+    width: 300px;
+}
+.aboutPage{
+    line-height: 16px;
+    padding: 20px;
+    position: absolute;
+}
+.registerPage{
+    position: absolute;
+    padding: 38px 35px;
+}
+.speakersPage{
+    line-height: 16px;
+    position: absolute;   
+    width: 100%;
+}
+.speakersPage .nav{
+    float: right;
+    width: 250px;
+    height: 100%;
+    background-color: #f2f2e8;
+}
+.reviewersPage{
+    position: absolute;
+    background-color: #f2f2f2;
+    height: 100%;
+}
+.reviewersPage img{
+    margin: 27px 37px;
+}
+#tooltip{z-index: 200;background-color: #000; color: #fff; padding: 3px;position: absolute;}
+.speakersPage .nav a{
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    margin-left: 2px;
+    padding-left: 50px;
+    color: #367899;
+    margin: 0;
+}
+.speakersPage h1{
+    line-height: 45px;
+}
+.speakersPage .details{
+    float: left;
+    padding: 10px;
+    width: 347px;
+}
+.speakersPage .nav a.active{
+    background-color: #fff;
+}
+.speakersPage .nav a#seema{
+    background-image: url("../images/speakers-thumbnails/seema.jpg");
+}
+.speakersPage .nav a#archana{
+    background-image: url("../images/speakers-thumbnails/archana.jpg");
+}
+.speakersPage .nav a#indraneel{
+    background-image: url("../images/speakers-thumbnails/indraneel.jpg");
+}
+.speakersPage .nav a#jainendra{
+    background-image: url("../images/speakers-thumbnails/jainendra.jpg");
+}
+.speakersPage .nav a#jonas{
+    background-image: url("../images/speakers-thumbnails/jonas.jpg");
+}
+.speakersPage .nav a#madhur{
+    background-image: url("../images/speakers-thumbnails/madhur.jpg");
+}
+.speakersPage .nav a#renna{
+    background-image: url("../images/speakers-thumbnails/renne.jpg");
+}
+.speakersPage .nav a#puneet{
+    background-image: url("../images/speakers-thumbnails/puneet.jpg");
+}
+.speakersPage .nav a#niket{
+    background-image: url("../images/speakers-thumbnails/niket.jpg");
+}
+.speakersPage .nav a#anil{
+    background-image: url("../images/speakers-thumbnails/anil.jpg");
+}
+.contactPage{
+    line-height: 27px;
+    padding: 20px;
+    position: absolute;
+}
+.contactPage .contactDetails{line-height: 15px;margin-top: 8px;}
+.contactPage h1{margin-top: 17px;}
+ h1{font-size: 24px; color:#367899; font-weight: normal; margin: 0; line-height: 24px;font-weight: 300;}
+ h2{font-size: 18px; font-weight: normal; margin: 0; line-height: 18px; font-style: italic;margin: 6px 0; color: #999;font-weight: 300;}
+ .venue p{
+       line-height: 17px;
+    margin-top: 7px;
+    padding-left: 15px;
+ }
+ .venue h1{padding-left: 15px;}
+ .social_media {
+ bottom: 4px;
+    float: right;
+    height: 45px;
+    left: -24px;
+    position: absolute;
+}
+.social_media ul{margin: 0;}
+.social_media ul li {
+    float: right;
+    margin: 0 5px 0 0;
+    padding-top: 10px;
+    list-style: none;
+}
+.social_media img {
+    margin: 0 0 8px;
+}
